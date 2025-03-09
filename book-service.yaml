@@ -1,0 +1,42 @@
+server:
+  port: 8084
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 40MB
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dictionary
+    username: ilgiz
+    password: ilgiz
+    driver-class-name: org.postgresql.Driver
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+  devtools:
+    restart:
+      enabled: true
+      poll-interval: 50
+      quiet-period: 10
+    livereload:
+      enabled: true
+  security:
+    enabled: false
+
+uploadDir: C:/Java/Spring/read-wise/book-service/src/main/resources/static/files
+uploadDirImage: C:/Java/Spring/read-wise/book-service/src/main/resources/static/images
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          servlet:
+            resource: ERROR
