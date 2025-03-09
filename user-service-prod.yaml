@@ -1,2 +1,10 @@
 server:
   port: 8083
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/users
+    username: ilgiz
+    password: ilgiz
+    driver-class-name: org.postgresql.Driver
