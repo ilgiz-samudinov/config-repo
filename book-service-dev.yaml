@@ -30,9 +30,11 @@ spring:
   security:
     enabled: false
 
-uploadDir: C:/Java/Spring/read-wise-frontend/files
-uploadDirImage: C:/Java/Spring/read-wise-frontend/images
+#uploadDir: C:/Java/Spring/read-wise-frontend/files
+#uploadDirImage: C:/Java/Spring/read-wise-frontend/images
 
+uploadDir: C:/Java/Spring/read-wise/book-service/src/main/resources/static/files
+uploadDirImage: C:/Java/Spring/read-wise/book-service/src/main/resources/static/images
 
 logging:
   level:
